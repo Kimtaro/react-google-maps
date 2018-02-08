@@ -76,8 +76,8 @@ export function componentWillUnmount(component) {
 
 function registerEvents(component, instance, eventMap) {
   const registeredList = Object.keys(eventMap).reduce(
-    (acc, googleEventName, index) => {
-      let onEventName = Object.keys(eventMap)[index]
+    (acc, onEventName, index) => {
+      let googleEventName = eventMap[onEventName]
       if (typeof component.props[onEventName] === "function") {
         acc.push(
           google.maps.event.addListener(
