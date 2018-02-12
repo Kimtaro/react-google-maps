@@ -1,3 +1,5 @@
+Note: This is a fork for the purpose of removing lodash. The original project is here: https://github.com/tomchentw/react-google-maps
+
 # react-google-maps
 > React.js Google Maps integration component
 
